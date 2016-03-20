@@ -6,6 +6,8 @@ var defaultOptions = {
   joinWith: ' + '
 }
 
+var options = {}
+
 var keyMap = {
   8: 'Backspace',
   9: 'Tab',
@@ -45,7 +47,7 @@ function buildKeyMap (e) {
   }
 }
 
-function buildKeyArray (e, options) {
+function buildKeyArray (e) {
   var map = buildKeyMap(e)
   var modifiers = map.modifiers
 
@@ -60,9 +62,11 @@ function buildKeyArray (e, options) {
   return result
 }
 
-function event2string (e, options) {
-  options = Object.assign(defaultOptions, options)
-  return buildKeyArray(e, options).join(options.joinWith)
+function event2string (e) {
+  return buildKeyArray(e.join(options.joinWith)
 }
 
-module.exports = event2string
+module.exports = function (userOptions) {
+	options = Object.assign(defaultOptions, userOptions)
+	return event2string
+}
