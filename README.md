@@ -52,6 +52,18 @@ For example this could be used to get the Mac style keyboard shortcut strings:
 
 The default settings are compatible with the format that common keyboard shortcut libraries, like [keymaster](https://github.com/madrobby/keymaster) or [Mousetrap](https://craig.is/killing/mice), accept.
 
+### Detailed information
+
+`event2string.details(e)` can be used to get more details. This can be useful for
+validating keyboard shortcuts, e.g. for requiring a modifier and a normal key.
+It returns an object with this information:
+
+- `hasModifier`: True iff atleast one of cmd, ctrl, alt or shift was pressed
+- `hasKey`: True iff a key other than a modifier is pressed
+- `map`: An object containing information which modifier is active and what
+  other key is pressed
+
+
 ## Disclaimer
 
 - This library is meant to parse only `keydown` events. `keypress` / `keyup` events have small differences, e..g. `keydown` is needed to capture `Command` on a Mac. So `keydown` is advisible for this anyways.
