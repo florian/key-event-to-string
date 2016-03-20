@@ -54,7 +54,7 @@ The default settings are compatible with the format that common keyboard shortcu
 
 ### Detailed information
 
-`event2string.details(e)` can be used to get more details. This can be useful for
+`require('key-event-to-string').details(e)` can be used to get more details. This can be useful for
 validating keyboard shortcuts, e.g. for requiring a modifier and a normal key.
 It returns an object with this information:
 
