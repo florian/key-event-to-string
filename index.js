@@ -67,23 +67,23 @@ function event2string (e) {
 }
 
 function details (e) {
-	var map = buildKeyMap(e)
-	var mods = map.modifiers
+  var map = buildKeyMap(e)
+  var mods = map.modifiers
 
-	var hasModifier = mods.cmd || mods.ctrl || mods.alt || mods.shift
+  var hasModifier = mods.cmd || mods.ctrl || mods.alt || mods.shift
 
-	var result = {
-		hasKey: map.character != null,
-		hasModifier: hasModifier,
-		map: map
-	}
+  var result = {
+    hasKey: map.character != null,
+    hasModifier: hasModifier,
+    map: map
+  }
 
-	return result
+  return result
 }
 
 module.exports = function (userOptions) {
-	options = Object.assign(defaultOptions, userOptions)
-	return event2string
+  options = Object.assign(defaultOptions, userOptions)
+  return event2string
 }
 
 module.exports.details = details

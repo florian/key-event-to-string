@@ -4,7 +4,7 @@
   "description": " Converts a JavaScript key event object into a humanly readable format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
