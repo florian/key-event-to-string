@@ -1,5 +1,5 @@
 var defaultOptions = {
-  cmd: 'Command',
+  cmd: 'Cmd',
   ctrl: 'Ctrl',
   alt: 'Alt',
   shift: 'Shift',

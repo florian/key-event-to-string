@@ -32,7 +32,7 @@ document.body.onkeydown = (e) => {
 
 | key | value | default value |
 |:--|:--|:--|
-| `cmd` |  What string to display for the Cmd/Meta modifier | `"Command"` |
+| `cmd` |  What string to display for the Cmd/Meta modifier | `"Cmd"` |
 | `ctrl` |  What string to display for the Ctrl modifier | `"Ctrl"` |
 | `alt` |  What string to display for the Alt/Option modifier | `"Alt"` |
 | `shift` |  What string to display for the Shift modifier | `"Shift"` |

@@ -1,6 +1,6 @@
 {
   "name": "key-event-to-string",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": " Converts a JavaScript key event object into a humanly readable format",
   "main": "index.js",
   "scripts": {
